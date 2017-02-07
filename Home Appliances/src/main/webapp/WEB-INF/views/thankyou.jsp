@@ -10,7 +10,8 @@
 thank you for your order
 
  <form action="${flowExecutionUrl}" method="post">
-<!--  <input type="submit" name="_eventId_goToAddress" value="Next">-->
+
+
 <input type="submit"  name="_eventId_end" value="Next"/>
 <input type="hidden" name="_flowExecutionKey" value="${flowExecutionKey}"/>
 </form>

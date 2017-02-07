@@ -9,12 +9,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
+     
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }    
-    /* Add a gray background color and some padding to the footer */
+    
     footer {
       background-color: #f2f2f2;
       padding: 25px;
@@ -77,24 +77,4 @@
 
 </html>
 
-<!-- <div class="container">
-  <center><h2 style="color: pink;">Home Appliances</h2></center>
-  <div>
-  <ul class="nav nav-pills">
-    <li><a href="index" style="color: white">Home</a></li>
-  </div>
-    <div align="center" class="form">
-   <form name='f' action="<c:url value='j_spring_security_check'/>" method='POST' >
-      <table>
-         <tr>
-            <td><input type='text' name='j_username' style="width: 200px" placeholder="UserName Required" required="true"></td>
-         </tr>
-         <tr>
-            <td><input type='password' name='j_password' style="width: 200px" placeholder="Password Required" required="true"/></td>
-         </tr>
-         <tr>
-            <td><input name="submit" type="submit" value="submit" /></td>
-         </tr>
-      </table>
-  </form>
- </div>-->
+

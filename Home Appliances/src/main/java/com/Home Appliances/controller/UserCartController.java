@@ -11,9 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
-/*
- * This controller is called when user clicks on cart menu or button
- */
+
 @Controller
 @RequestMapping("/user/cart")
 public class UserCartController {
@@ -21,9 +19,6 @@ public class UserCartController {
     @Autowired
     private UsersDetailService usersDetailService;
     
-    /*
-     * Initially getCart method is called to get user card items from database
-     */
     @RequestMapping
     public String getCartItems(@AuthenticationPrincipal User activeUser){
     	UsersDetail usersDetail = usersDetailService.getUserByUsername (activeUser.getUsername());
@@ -31,9 +26,7 @@ public class UserCartController {
 
         return "redirect:/user/cart/"+cartId;
     }
-    /*
-     * getCartRedirect method is called from getCart method to set retrieved cart from the database.
-     */
+    
     @RequestMapping("/{cartId}")
     public String getNewUrl(@PathVariable (value = "cartId") int cartId, Model model) {
         model.addAttribute("cartId", cartId);

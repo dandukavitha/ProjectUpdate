@@ -9,7 +9,7 @@
 <body>
 this is confirmation.jsp
    <form action="${flowExecutionUrl}" method="post">
-<!--  <input type="submit" name="_eventId_goToAddress" value="Next">-->
+
 <input type="submit"  name="_eventId_confirm" value="Next"/>
 <input type="hidden" name="_flowExecutionKey" value="${flowExecutionKey}"/>
 <button class="btn btn-danger" name="_eventId_cancel">Cancel</button>

@@ -9,12 +9,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }    
-    /* Add a gray background color and some padding to the footer */
+  
     footer {
       background-color: #f2f2f2;
       padding: 25px;

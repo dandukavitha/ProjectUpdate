@@ -16,12 +16,12 @@
     <script data-require="angular.js@1.0.x" src="http://code.angularjs.org/1.0.7/angular.min.js" data-semver="1.0.7"></script>
 
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
+     
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }    
-    /* Add a gray background color and some padding to the footer */
+   
     footer {
       background-color: #f2f2f2;
       padding: 25px;
@@ -125,9 +125,7 @@
 
     cartApp.controller("addToCartCtrl", function ($scope, $http){
     	
-    	 /*
-         * retrieveCart method is used to get all cart items at the starting of the application
-         */
+    	
         $scope.retrieveCart = function (cartId) {
             $scope.cartId = cartId;
             $scope.refreshCartItems(cartId);
@@ -138,9 +136,7 @@
         }
         
         
-        /*
-         * removeItemFromCart method is used to remove a item from the cart
-         */
+        
         $scope.removeItemFromCart = function (itemId) {
         	alert('inside remove method');
             $http.put('http://localhost:8086/shoeclue/usercart/cart/removeItem/'+itemId).success(function (data) {
@@ -149,9 +145,7 @@
             });
         };
 
-    	 /*
-         * addItemToCart method is used to add items into the cart
-         */
+    	 
         $scope.addItemToCart = function (itemId) {
         	 alert("test");
             $http.put('http://localhost:8086/shoeclue/usercart/cart/addItem/'+itemId).success(function () {
@@ -160,9 +154,7 @@
         };
        
        
-        /*
-         * GrandTotalOfItems method is called on cart page to calculate grand total for the added items
-         */
+       
         $scope.GrandTotalOfItems = function () {
             var grandTotal=0;
 
@@ -172,9 +164,7 @@
 
             return grandTotal;
         };
-        /*
-    	 * refreshCartItems method is called by others methods in same controller to refresh the cart
-    	 */
+        
         $scope.refreshCartItems = function () {
         	alert('inside refresh')
             $http.get('http://localhost:8086/shoeclue/usercart/cart/refreshCart/'+$scope.cartId).success(function (data) {
@@ -182,9 +172,7 @@
             });
         };
         
-        /*
-         * clearCartItems method is used to delete all items from the cart
-         */
+        
         $scope.clearCartItems = function () {
         	$http['delete']('http://localhost:8086/shoeclue/usercart/cart/clearCartItems/'+$scope.cartId).success(function (data) {$scope.refreshCartItems()});
         };

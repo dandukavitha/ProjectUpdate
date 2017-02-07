@@ -20,7 +20,7 @@ public class CartItem implements Serializable{
     private Cart cart;
 
     @OneToOne
-    //@JsonIgnore
+    
     @JoinColumn(name = "product_id")
     private Item item;
     private int quantity;

@@ -83,9 +83,7 @@ public class CartManagementController {
         cartItem.setCart(cart);
         cartItemService.addCartItem(cartItem);
     }
-    /*
-     * removeItem method is used to remove a item from user cart.
-     */
+    
     @RequestMapping(value = "/removeItem/{itemId}", method = RequestMethod.PUT)
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
     public void removeItem (@PathVariable(value = "itemId") int itemId) {
@@ -94,28 +92,22 @@ public class CartManagementController {
         cartItemService.removeCartItem(cartItem);
 
     }
-    /*
-     * clearCartItems method is used to remove all items from user cart.
-     */
+    
     @RequestMapping(value = "/clearCartItems/{cartId}", method = RequestMethod.DELETE)
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
     public void clearCartItems(@PathVariable(value = "cartId") int cartId) {
     	
         Cart cart = cartService.getCartById(cartId);
         System.out.println("mycart:"+cart.getCartId());
-       // System.out.println("cart value:"+cartId);
+       
         cartItemService.removeAllCartItems(cart);
         System.out.println(" after remove cart clear");
     }
-    /*
-     * ExceptionHandler for client errors.
-     */
+    
     @ExceptionHandler(IllegalArgumentException.class)
     @ResponseStatus(value = HttpStatus.BAD_REQUEST, reason = "Illegal request, please verify your payload.")
     public void handleClientErrors (Exception e) {}
-    /*
-     * ExceptionHandler for server errors.
-     */
+    
     @ExceptionHandler(Exception.class)
     @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR, reason = "Internal Server Error.")
     public void handleServerErrors (Exception e) {}

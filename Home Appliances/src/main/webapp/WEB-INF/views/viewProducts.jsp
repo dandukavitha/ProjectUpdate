@@ -15,12 +15,12 @@
     <script data-require="angular.js@1.0.x" src="http://code.angularjs.org/1.0.7/angular.min.js" data-semver="1.0.7"></script>
 
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
+     
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }    
-    /* Add a gray background color and some padding to the footer */
+    
     footer {
       background-color: #f2f2f2;
       padding: 25px;

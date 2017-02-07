@@ -58,13 +58,13 @@ public class HomeController {
 			jsonData=mapper.writeValueAsString(product);
 			System.out.println(jsonData);
 		} catch (JsonGenerationException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} catch (JsonMappingException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		return new ModelAndView("index","products",jsonData);

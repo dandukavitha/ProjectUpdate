@@ -134,13 +134,13 @@ public String logout(HttpServletRequest request)
 			jsonData=mapper.writeValueAsString(customer);
 			System.out.println(jsonData);
 		} catch (JsonGenerationException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} catch (JsonMappingException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		
@@ -168,8 +168,7 @@ public String logout(HttpServletRequest request)
     	productService.addProduct(p);
     	 MultipartFile itemImage =p.getFile();
          String rootDirectory = request.getSession().getServletContext().getRealPath("/");
-         //System.out.println("root directory:"+rootDirectory);
-         //System.out.println("hehehe:"+".\\WEB-INF\\resources\\images\\"+p.getProduct_id()+".jpg");
+         
          path = Paths.get("C://Users//admin//Desktop//core java videos//HomeAppliances//src//main//webapp//resources//images//"+p.getProduct_id()+".jpg");
 System.out.println();
 
@@ -185,34 +184,7 @@ System.out.println();
          }
     	
     	return "redirect:/viewProducts";
-    	/*String fileName = null,error="";
-    	if (!file.isEmpty()) {
-            try {
-                fileName = file.getOriginalFilename();
-                byte[] bytes = file.getBytes();
- BufferedOutputStream buffStream = new BufferedOutputStream(new FileOutputStream(new File("H:/spring framework/project1/HomeAppliances/src/main/webapp/resources/images/" + fileName)));
-                buffStream.write(bytes);
-                buffStream.close();
-                error= "You have successfully uploaded " + fileName;
-                System.out.println("---------->"+error);
-            } catch (Exception e) {
-            	error="You failed to upload " + fileName + ": " + e.getMessage();
-            	System.out.println(e);
-            }
-        } else {
-        	error="Unable to upload. File is empty.";
-        }
-    	productService.addProduct(p);
     	
-    	File oldName = new File("H:/spring framework/project1/HomeAppliances/src/main/webapp/resources/images/" + fileName);
-        File newName = new File("H:/spring framework/project1/HomeAppliances/src/main/webapp/resources/images/" + p.getProduct_id()+fileName.substring(fileName.indexOf(".")));
-        System.out.println("new file name:--------------->"+newName);
-        if(oldName.renameTo(newName)) {
-           System.out.println(p.getProduct_id());
-           error=p.getProduct_name()+" added Successfully !";
-           System.out.println("");
-        } 
-    	return new ModelAndView("addProduct", "command", new Product()).addObject("message", "Product Added Successfully");*/
 	}
 	
 	@RequestMapping("/viewProducts")
@@ -225,13 +197,13 @@ System.out.println();
 			jsonData=mapper.writeValueAsString(product);
 			System.out.println(jsonData);
 		} catch (JsonGenerationException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} catch (JsonMappingException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		return new ModelAndView("viewProducts","products",jsonData);

@@ -13,18 +13,14 @@ import java.io.IOException;
 import java.util.List;
 
 
-/*
- * This controller is used to show all Items and item detail page.
- */
+
 @Controller
 @RequestMapping("/furnitures")
 public class ItemAndDetailController {
 
     @Autowired
     private ItemDaoService itemService;
-    /*
-     * getAllItems method is used to show all items those are into the system
-     */
+    
     @RequestMapping("/allItems")
     public String getAllItems(Model model) {
         List<Item> items = itemService.viewProducts();
@@ -32,9 +28,7 @@ public class ItemAndDetailController {
 
         return "home";
     }
-    /*
-     * viewItem method is used to show items detail page
-     */
+    
     @RequestMapping("/showitem/{itemId}")
     public String viewItem(@PathVariable int itemId, Model model) throws IOException {
     	Item items=itemService.getProduct(itemId);
@@ -42,9 +36,7 @@ public class ItemAndDetailController {
 
         return "showItem";
     }
-    /*
-     * getItemByCategory method is called when user wants to get items by category.
-     */
+    
     @RequestMapping("/itemList")
     public String getItemByCategory(@RequestParam("searchCondition") String searchCondition, Model model) {
         List<Item> items = itemService.viewProducts();

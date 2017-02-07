@@ -13,12 +13,12 @@
     <link href="./resources/css/style.css" rel="stylesheet" media="screen">
     <script data-require="angular.js@1.0.x" src="http://code.angularjs.org/1.0.7/angular.min.js" data-semver="1.0.7"></script>
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }    
-    /* Add a gray background color and some padding to the footer */
+   
     footer {
       background-color: #f2f2f2;
       padding: 25px;
@@ -78,7 +78,7 @@ $(document).ready(function(){
       <li data-target="#myCarousel" data-slide-to="7"></li>
     </ol>
 
-    <!-- Wrapper for slides -->
+    
     <div class="carousel-inner" role="listbox">
 
       <div class="item active">
@@ -86,7 +86,7 @@ $(document).ready(function(){
         <div class="carousel-caption">
 		 <form class="form-inline" role="form">
           <div class="form-group">
-      <!--  <button type="button" class="btn btn-danger">Search</button><input type="text" class="form-control" id="pwd" placeholder="Enter Something">-->
+      
 	  </form>
     </div>
         </div>
@@ -97,7 +97,7 @@ $(document).ready(function(){
         <div class="carousel-caption">
          <form class="form-inline" role="form">
           <div class="form-group">
-      <!-- <button type="button" class="btn btn-danger">Search</button><input type="text" class="form-control" id="pwd" placeholder="Enter Something"> -->
+      
 	  </form>
     </div>
         </div>
@@ -107,7 +107,7 @@ $(document).ready(function(){
         <div class="carousel-caption">
          <form class="form-inline" role="form">
           <div class="form-group">
-      <!-- <button type="button" class="btn btn-danger">Search</button><input type="text" class="form-control" id="pwd" placeholder="Enter Something"> -->
+      
 	  </form>
     </div>
         </div>
@@ -118,7 +118,7 @@ $(document).ready(function(){
         <div class="carousel-caption">
          <form class="form-inline" role="form">
           <div class="form-group">
-      <!-- <button type="button" class="btn btn-danger">Search</button><input type="text" class="form-control" id="pwd" placeholder="Enter Something"> -->
+      >
 	  </form>
     </div>
         </div>
@@ -129,7 +129,7 @@ $(document).ready(function(){
         <div class="carousel-caption">
          <form class="form-inline" role="form">
           <div class="form-group">
-      <!-- <button type="button" class="btn btn-danger">Search</button><input type="text" class="form-control" id="pwd" placeholder="Enter Something"> -->
+      
 	  </form>
     </div>
         </div>
@@ -140,7 +140,7 @@ $(document).ready(function(){
         <div class="carousel-caption">
          <form class="form-inline" role="form">
           <div class="form-group">
-      <!-- <button type="button" class="btn btn-danger">Search</button><input type="text" class="form-control" id="pwd" placeholder="Enter Something"> -->
+      
 	  </form>
     </div>
         </div>
@@ -151,7 +151,7 @@ $(document).ready(function(){
         <div class="carousel-caption">
          <form class="form-inline" role="form">
           <div class="form-group">
-      <!--  <button type="button" class="btn btn-danger">Search</button><input type="text" class="form-control" id="pwd" placeholder="Enter Something">-->
+      
 	  </form>
     </div>
         </div>
@@ -161,14 +161,14 @@ $(document).ready(function(){
         <div class="carousel-caption">
          <form class="form-inline" role="form">
           <div class="form-group">
-      <!-- <button type="button" class="btn btn-danger">Search</button><input type="text" class="form-control" id="pwd" placeholder="Enter Something">-->
+      
 	  </form>
     </div>
         </div>
       </div>
     </div>
 
-    <!-- Left and right controls -->
+    
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>

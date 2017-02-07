@@ -103,41 +103,7 @@
   </div>
 </nav>
 
- <!--  <div>
  
- <form method="post" action="SignUp">
- <center> <table>
-  <tr>
-  <td><img src="resources/images/kavi.jpg" style="width: 300px;height: 300px"></td>
-  </tr>
-  <tr>
- <td>First Name:  </td>
-  <td><input type="text" name="fname"></td><td><br></br></td>
- </tr>
- <tr>
-  <td>Last Name:  </td>
-  <td><input type="text" name="lname"></td>
- <td><br></br></td>
-  </tr>
-  <tr>
-  <td>Email Id:  </td>
-  <td><input type="text" name="lname"></td>
- <td><br></br></td>
-  </tr>
-  <tr>
-  <td>Password:  </td>
-  <td><input type="password" name="password"></td>
-  <td><br></br></td>
-  </tr>
-  <tr>
-  <td>Confirm Password:  </td>
-  <td><input type="password" name="password"></td>
-  <td><br></br></td>
-  </tr>
-  <tr><td><input type="submit" value="submit"></td></tr>
- </table></center>
-  </form>
-  </div>-->
 
   <div class="row">
         <div class="col-md-6 col-md-offset-3">

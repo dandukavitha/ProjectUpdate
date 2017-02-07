@@ -11,9 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
-/*
- * This controller is used to handle user order
- */
+
 @Controller
 public class OrderController {
 
@@ -22,9 +20,7 @@ public class OrderController {
 
     @Autowired
     private OrderService orderService;
-    /*
-     * createOrder method is used to insert user order into the database.
-     */
+    
     @RequestMapping("/order/{cartId}")
     public String createOrder(@PathVariable("cartId") int cartId) {
     	UserOrder userOrder = new UserOrder();

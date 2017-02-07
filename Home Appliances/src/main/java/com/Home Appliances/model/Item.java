@@ -22,9 +22,7 @@ import org.springframework.web.multipart.MultipartFile;
 @Entity
 public class Item implements Serializable {
 	
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = 1L;
 	@Id@GeneratedValue(strategy=GenerationType.AUTO)
 	private int product_id;
@@ -37,9 +35,9 @@ public class Item implements Serializable {
 	@Size(min=20, message="must have atleast 20 characters")
 	private String description;
 	private String brand;
-	//@OneToOne(mappedBy = "item", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	
     @OneToOne
-	//@JsonIgnore
+	
     private CartItem cartItem;
 
 	public CartItem getCartItem() {
